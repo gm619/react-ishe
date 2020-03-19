@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Clock from './Clock';
 import Events from './Events';
+import ConditionalRendering from './ConditionalRendering';
+import Page from './WarningBanner';
 
 class App extends Component {
   constructor(){
@@ -25,9 +27,6 @@ class App extends Component {
       ]
     }
   }
-  // activateLaser() {
-  //   alert("BaBaHhh");
-  // }
   render() {
     return(
       <div>
@@ -44,6 +43,10 @@ class App extends Component {
         <Clock name="Johnny" />
         <Clock name="Thomas" />
         <Events />
+
+        <ConditionalRendering />
+        <p>_____</p>
+        <Page />
       </div>
     );
   }
